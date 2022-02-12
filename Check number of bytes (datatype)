@@ -1,0 +1,26 @@
+
+#include <stdio.h>
+
+int main()
+{
+    // create variables
+    int number = 48;
+    char letter= 'A';
+    
+    printf("We are printing the variables!!!\n");
+    
+    // set a print for each variable 
+    printf("Number variable is %d \n", number);
+    printf("Letter variable is %c \n", letter);
+    
+    // check ASCII number for specific character 
+    printf("ASCII number for %c >> %d \n",letter, letter);
+    
+    // check the amount of memory allocated based on variable
+    printf("Amount of memory used: \n");
+    printf("Number of bytes for %d >> %d \n", number, (int)sizeof(number));
+    printf("Number of bytes for %d >> %d \n", letter, (int)sizeof(letter));
+    
+    // main difference is based on datatype (int, char, long...)
+    return 0;
+}
