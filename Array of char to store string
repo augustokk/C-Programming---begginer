@@ -1,0 +1,22 @@
+
+#include <stdio.h>
+int main(){
+    // When defining a new character array, the size is implied automatically if the values are assigned during initialisation
+    char name[] = "Simon";
+    
+    //If the array is not assigned a value when it is defined then the size must be specified by an integer inside the square brackets
+    char name2 [6];
+    
+    char initials[5]; // allocates a series of 5 bytes
+    initials[0] = 'R';
+    initials[1] = '.';
+    initials[2] = 'D';
+    initials[3] = '.';
+    initials[4] = '\0'; // this will allow the programs to understand as last empty character 
+    
+    // To print the character array you must use printf with the formatting character %s.
+    printf("Name is %s \n", name);
+    printf("Initials are %s \n", initials);
+    
+ return 0;
+}
