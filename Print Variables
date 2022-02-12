@@ -1,0 +1,18 @@
+
+#include <stdio.h>
+
+int main()
+{
+    // create variables
+    int number = 48;
+    char letter= 'A';
+    
+    printf("We are printing the variables!!!\n");
+    
+    // set a print for each variable 
+    printf("Number variable is %d \n", number);
+    printf("Letter variable is %c \n", letter);
+    
+    
+    return 0;
+}
