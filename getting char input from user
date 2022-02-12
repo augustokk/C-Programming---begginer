@@ -1,0 +1,12 @@
+
+#include <stdio.h>
+int main(){
+    int keyinput;
+    printf("Please type a character: \n");
+    keyinput = getchar();
+    getchar();
+    printf("Letter entered: %c \n", keyinput);
+    printf("number corresponding at ASCII table: %d \n", keyinput);
+    
+ return 0;
+}
