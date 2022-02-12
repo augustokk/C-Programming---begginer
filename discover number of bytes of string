@@ -1,0 +1,18 @@
+
+#include <stdio.h>
+int main(){
+    // We didnt allocate specific space for the array, it will take a specific space based on value (Robin)
+    char name[] = "Robin";
+    
+    // we use the function sizeof() to collect number of bytes of a variable
+    int byteSize_Name = sizeof(name);
+    
+    printf("For the string %s, the quantity of bytes allocated is  %d \n", name,byteSize_Name);
+      
+    // same for surname  
+    char surname[] = "Wood";
+    int byteSize_Surname = sizeof(surname);
+    printf("For the string %s, the quantity of bytes allocated is  %d", name,byteSize_Surname);
+   
+ return 0;
+}
