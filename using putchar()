@@ -1,0 +1,24 @@
+
+#include <stdio.h>
+int main(){
+    char letterX = 'X';
+    // To print a single character to the console we can use putchar() 
+    putchar(letterX);
+    
+    printf("Enter the first initial of your name followed by ENTER key: \n");
+    char first_Letter_name = getchar();
+    getchar();
+    
+    printf("Enter the first initial of your surname followed by ENTER key: \n");
+    char first_Letter_surname = getchar();
+    getchar();
+    
+    char dot = '.';
+    
+    putchar(first_Letter_name);
+    putchar(dot);
+    putchar(first_Letter_surname);
+    putchar(dot);
+    
+ return 0;
+}
