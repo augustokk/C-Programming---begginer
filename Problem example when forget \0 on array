@@ -1,0 +1,21 @@
+
+#include <stdio.h>
+int main(){
+    //  we'll forget to put the \0 at the end.
+    char word[4];
+    word[0] = 'c';
+    word[1] = 'a';
+    word[2] = 't';
+    word[3] = 's';
+    
+    // add another strings
+    char animal[] = "Dog";
+    char game[] = "Cards";
+    
+    //print all 3 arrays to check the problem of not putting \0 on word array
+    printf("Word is >> %s \n", word);
+    printf("Animal is >> %s \n", animal);
+    printf("Game is >> %s \n", game);
+    
+ return 0;
+}
