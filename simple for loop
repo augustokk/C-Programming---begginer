@@ -1,0 +1,14 @@
+
+#include <stdio.h>
+
+int main(){
+    int start = 0;
+    int i = 0;
+    // for a loop we need 3 variables 
+    // for(initial condition, condition, loop update)
+    for (i = start; i <=16; i++){
+        printf("for the number %d, your hexadecimal is %X \n", i,i);
+    }
+
+ return 0;
+}
