@@ -1,12 +1,26 @@
 
+
 #include <stdio.h>
+#include <limits.h>
 
 int main()
 {
+    //Create an integer variable num1 and set it to 0xFFFF.
     int num1;
     num1 = 0xFFFF;
-    printf(" value of num1: %d \n", num1);
-    printf(" value hex of num1: %x \n", num1);
     
+    //Print the current value of num1 in decimal and hex
+    printf("value of num1: %d \n", num1);
+    printf("value hex of num1: %X \n", num1);
+    
+    //Print out the number of bytes and bits used for the num1 variable.
+    int num1_size = (int) sizeof(num1);
+    printf("num1 uses %d bytes and %d bits \n", num1_size, num1_size*8);
+    
+    //Print out the maximum and minimum values that can be stored in a num1 as a decimal.
+    //Needs to use the library <limits.h>
+    printf("min value is %d \n", INT_MIN);
+    printf("max value is %d \n", INT_MAX);
+
     return 0;
 }
