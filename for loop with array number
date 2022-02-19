@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(void)
+{
+    int i;
+    // will create a array of 10 elements
+    int array[10];
+    // assignment loop
+    for (i=0; i<10; i++)
+    {
+       // that will set values for each position of the array
+        array[i] =i*i;
+    }
+    
+    // printing loop
+    for (i = 0; i<10; i++)
+    {
+        // that will print each value of the array
+        printf("%d\n", array[i]);
+    }
+    return 0;
+}
