@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+// FUNCTION IN C
+// <type of return value> <name> (<parameters: <type> <name>) {
+    //BODY OF FUNCTION;
+    // <optional return statement>
+
+// <type of return value> <name> (<parameters: <type> <name>) {
+int factorial (int n){
+    
+    //BODY OF FUNCTION;
+    if (n==1) return 1;
+    
+    // <optional return statement>
+    return n*factorial(n-1);
+    
+}
+
+// now we call the funtion at main FUNCTION
+void main(void){
+    int sum;
+    printf("Factorial of 4 is %d\n", factorial(4));
+}
