@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+// to show allocation on memory we are creating a swap values program
+// we use *a --> that means a pointer (that will be the addres to get/set the value)
+void swap(char *a, char *b){
+    // first we create a temporary holder
+    char temporary_holder;
+    // we set the value of one of our variables to that holder
+    temporary_holder = *a;
+    // then we do the swap of value with the other variable
+    *a = *b; // now the new value of a is equal b
+    // then we collect the value we stored on the temporary holder
+    *b = temporary_holder; // now the value of b is equal initial value of a (because it was stored on that temporary_holder variable)
+
+    printf("Inside the funtion the values are: a=%c b=%c \n", *a, *b);
+}
+
+
+void main(void){
+    char a, b;
+    a = getchar();
+    getchar();
+    // we use &a to show the addres of a
+    printf("Address of A is ->> %x\n", &a);
+    
+    b = getchar();
+    getchar();
+    printf("Address of B is ->> %x\n", &b);
+    
+    printf("Before swap: a-->%c b-->%c \n", a ,b);
+    
+    swap(&a, &b);
+    
+    printf("After swap: a-->%c b-->%c \n", a ,b);
+}
+
