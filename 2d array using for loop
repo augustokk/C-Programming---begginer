@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main(void)
+{
+    // create a 2-d matrix [3]->rows [5]->columns
+    int matrix[3][5];
+    int row;
+    int col;
+    int i = 0;
+    
+    // for loop to set all rows
+    for (row=0; row<3; row++){
+        // nested for loop to set all columns
+        for (col=0; col<5; col++){
+            // set value for each position of matrix
+            matrix[row][col]=i;
+            i++;
+        }
+    }
+    // printing for loop
+    for (row=0; row<3; row++){
+        for (col=0; col<5; col++){
+            // we are using %02d so instead of show 1 -->sohws 01, thta will make our matrix better observed
+            printf("%02d  ", matrix[row][col]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
