@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // to show allocation on memory we are creating a swap values program
-// we use *a --> that means a pointer (that will be the addres to get/set the value)
+// we use *a --> that means a pointer (that will store the addres (not pass by value))
 void swap(char *a, char *b){
     // first we create a temporary holder
     char temporary_holder;
