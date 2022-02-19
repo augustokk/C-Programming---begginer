@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+// DECLARATION
+// when we declare a function that will prevent of errors of creating a main function before the  the needed function
+//<type of return value> <name> (<parameters: <type> <name>) {
+void print_hello();
+
+//MAIN FUNCTION 
+// we are setting the main function here to show the power of declaration
+// where we call for the function to get program running
+void main(void){
+    print_hello();
+}
+
+// DEFINITION
+// <type of return value> <name> (<parameters: <type> <name>) {
+    //BODY OF FUNCTION;
+    // <optional return statement>
+void print_hello(){
+    printf("Hello World!\n");
+    return;
+}
