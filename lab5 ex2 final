@@ -1,0 +1,62 @@
+#include <stdio.h>
+	
+	
+
+int main()
+{
+
+	int matrix_row = 4;
+	int matrix_col = 4;
+	int row = 0;
+	int col = 0;
+	char myMatrix [matrix_row][matrix_col];
+	char input = 0;
+	
+	//int char_count = 0;
+
+	printf("Enter a string: ");
+
+
+	input = getchar();
+
+	for(row=0; row<matrix_row; row++){
+		for(col=0; col<matrix_col; col++){
+			if(input!='\n'){
+
+				myMatrix[row][col] = input; 
+				input=getchar();
+				
+				//char_count++;
+			}else{
+				myMatrix[row][col] = 42; // * = 42
+			}
+		}
+	}
+
+	for (row = 0; row < matrix_row; row++)
+    {
+        for (col = 0; col < matrix_col; col++)
+        {
+            printf("%c ", myMatrix[row][col]);
+        }
+        
+        printf("\n");
+    }
+    
+    while(input != '\n'){
+        input=getchar();
+    }
+    
+    printf("Search character:");
+    input=getchar();
+    getchar();
+    
+    for (row = 0; row < matrix_row; row++)
+    {
+        for (col = 0; col < matrix_col; col++)
+        {
+            if (myMatrix [row] [col] == input){
+                printf("(%d, %d)\n", row, col);
+}}}
+return 0;
+}
