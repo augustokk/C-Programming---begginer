@@ -19,6 +19,7 @@ int main()
 
 	input = getchar();
 
+    // populate the matrix
 	for(row=0; row<matrix_row; row++){
 		for(col=0; col<matrix_col; col++){
 			if(input!='\n'){
@@ -33,6 +34,7 @@ int main()
 		}
 	}
 
+    // print matrix
 	for (row = 0; row < matrix_row; row++)
     {
         for (col = 0; col < matrix_col; col++)
@@ -43,20 +45,27 @@ int main()
         printf("\n");
     }
     
+    // clear buffer
     while(input != '\n'){
         input=getchar();
     }
     
+    // search for character
     printf("Search character:");
     input=getchar();
     getchar();
     
+    // print the specific space in matrix where the charaters are same 
     for (row = 0; row < matrix_row; row++)
     {
         for (col = 0; col < matrix_col; col++)
         {
             if (myMatrix [row] [col] == input){
                 printf("(%d, %d)\n", row, col);
-}}}
+}
+            
+        }
+        
+    }
 return 0;
 }
